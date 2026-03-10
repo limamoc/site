@@ -1,0 +1,10 @@
+/* esse conteudo pode incluir 1 ou mais formatos de media, exemplo:
+h1 {
+    font-size: 40px;
+    @include media(xs-abaixo) {
+        font-size: 30px;
+    }
+    @include media(xs-abaixo, md, xl-acima) {
+        font-size: 30px;
+    }
+} */
