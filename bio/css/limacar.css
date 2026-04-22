@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0px;
+}
+
+body {
+  font-family: "Poppins";
+  font-size: 1.25rem;
+  text-align: center;
+  background-image: linear-gradient(#d80402 8%, #090909 24%);
+}
+
+.topo-logo {
+  width: 80%;
+  margin: 40px auto 10px auto;
+  border-radius: 20px;
+  padding: 20px;
+  background-color: #000;
+}
+
+@media (min-width: 768px) {
+  .topo-logo {
+    max-width: 544px;
+  }
+}
+
+.logo {
+  height: auto;
+  width: 100%;
+  max-width: 210px;
+}
+
+p {
+  font-style: italic;
+  font-weight: 400;
+  color: #ffba00;
+  margin-bottom: 40px;
+}
+
+p a {
+  text-decoration: none;
+  color: #fff;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.corpo {
+  width: 100%;
+  max-width: 330px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media (min-width: 768px) {
+  .corpo {
+    max-width: 500px;
+  }
+}
+
+.secao {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.secao:nth-child(odd) .flutuar {
+  animation: float 4s ease-in-out infinite;
+}
+
+.secao:nth-child(even) .flutuar {
+  animation: float-vert 5s ease-in-out infinite;
+}
+
+.secao .flutuar {
+  position: absolute;
+  bottom: 40px;
+  right: -10px;
+  max-width: 100px;
+}
+
+@media (min-width: 768px) {
+  .secao .flutuar {
+    bottom: 80px;
+    right: -20px;
+    max-width: 130px;
+  }
+}
+
+.secao .imagem {
+  width: 100%;
+}
+
+.secao .botao {
+  max-width: 360px;
+}
+
+.secao-dupla {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.secao-dupla .botao-secao {
+  width: 180px;
+}
+
+@media (min-width: 768px) {
+  .secao-dupla .botao-secao {
+    width: inherit;
+  }
+}
+
+.secao-dupla .botao-secao img {
+  width: 92%;
+}
+
+@keyframes float {
+  0% {
+    transform: translatex(0px);
+    filter: drop-shadow(0px 0px 0px #111);
+  }
+  50% {
+    transform: translatex(-15px);
+    filter: drop-shadow(15px 0px 5px rgba(3, 3, 3, 0.4));
+  }
+  100% {
+    transform: translatex(0px);
+    filter: drop-shadow(0px 0px 0px #111);
+  }
+}
+
+@keyframes float-vert {
+  0% {
+    transform: translatey(0px);
+    filter: drop-shadow(0px 0px 0px #111);
+  }
+  50% {
+    transform: translatey(-15px);
+    filter: drop-shadow(0px 15px 5px rgba(3, 3, 3, 0.4));
+  }
+  100% {
+    transform: translatey(0px);
+    filter: drop-shadow(0px 0px 0px #111);
+  }
+}
+
+footer {
+  font-size: 0.9rem;
+  margin-top: 50px;
+  padding: 15px 0px 15px 0px;
+  background-color: #191919;
+}
+
+footer p {
+  margin-bottom: 0px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}

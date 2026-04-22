@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import "_geral.scss";
+
+body {
+    font-family: "Poppins";
+    font-size: $s20;
+    text-align: center;
+    background-image: linear-gradient(#d80402 8%, #090909 24%);
+}
+
+.topo-logo {
+    width: 80%;    
+    margin: 40px auto 10px auto;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #000;
+
+    @include media(md-acima) {
+        max-width: 544px;
+    }
+}
+
+.logo {
+    height: auto;
+    width: 100%;
+    max-width: 210px;
+}
+
+p {
+    font-style: italic;
+    font-weight: 400;
+    color: #ffba00;
+    margin-bottom: 40px;
+    
+    a {
+        text-decoration: none;
+        color: #fff;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.corpo {
+    width: 100%;
+    max-width: 330px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    @include media(md-acima) {
+        max-width: 500px;
+    }
+}
+
+.secao {
+    position: relative;
+    margin-bottom: 20px;
+
+    &:nth-child(odd) {
+        .flutuar {
+            animation: float 4s ease-in-out infinite;
+        }
+    }
+
+    &:nth-child(even) {
+        .flutuar {
+            animation: float-vert 5s ease-in-out infinite;
+        }
+    }
+
+    .flutuar {
+        position: absolute;
+        bottom: 40px;
+        right: -10px;
+        max-width: 100px;
+
+
+        @include media(md-acima) {
+            bottom: 80px;
+            right: -20px;
+            max-width: 130px;
+        }
+    }
+
+    .imagem {
+        width: 100%;
+    }
+
+    .botao {
+        max-width: 360px;
+    }
+}
+
+.secao-dupla {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 40px;
+
+    .botao-secao {
+        width: 180px;
+
+        @include media(md-acima) {
+            width: inherit;
+        }
+
+        img {
+            width: 92%;
+        }
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translatex(0px);
+        filter: drop-shadow(0px 0px 0px #111);
+    }
+
+    50% {
+        transform: translatex(-15px);
+        filter: drop-shadow(15px 0px 5px rgba(3, 3, 3, 0.4));
+    }
+
+    100% {
+        transform: translatex(0px);
+        filter: drop-shadow(0px 0px 0px #111);
+    }
+}
+
+@keyframes float-vert {
+    0% {
+        transform: translatey(0px);
+        filter: drop-shadow(0px 0px 0px #111);
+    }
+
+    50% {
+        transform: translatey(-15px);
+        filter: drop-shadow(0px 15px 5px rgba(3, 3, 3, 0.4));
+    }
+
+    100% {
+        transform: translatey(0px);
+        filter: drop-shadow(0px 0px 0px #111);
+    }
+}
+
+footer {
+    font-size: 0.9rem;
+    margin-top: 50px;
+    padding: 15px 0px 15px 0px;
+    background-color: #191919;
+
+    p {
+        margin-bottom: 0px;
+    }
+
+    a {
+        text-decoration: none;
+        color: #fff;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
