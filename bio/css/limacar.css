@@ -18,7 +18,7 @@ body {
   font-family: "Poppins";
   font-size: 1.25rem;
   text-align: center;
-  background-image: linear-gradient(#d80402 8%, #090909 24%);
+  background-image: linear-gradient(#d80402 20%, #090909 40%);
 }
 
 .topo-logo {
@@ -39,6 +39,12 @@ body {
   height: auto;
   width: 100%;
   max-width: 210px;
+}
+
+h1 {
+  font-size: 1.3rem;
+  color: #fff;
+  margin: 20px 0px;
 }
 
 p {
